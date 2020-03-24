@@ -6,7 +6,9 @@ const Reposlist = ({ repos }) => {
     return <RepoItem key={repo.id} repo={repo} />;
   });
 
-  return <div className='ui divided list items '>{renderedList}</div>;
+  return (
+    <div className='ui divided list items  container '>{renderedList}</div>
+  );
 };
 
 export default Reposlist;

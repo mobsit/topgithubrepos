@@ -1,4 +1,5 @@
 import React from 'react';
+import Header from './Header';
 import axios from 'axios';
 import Reposlist from './Reposlist';
 import get30daysbefore from '../utils/get30daysbefore';
@@ -55,7 +56,9 @@ class App extends React.Component {
   };
   render() {
     return (
-      <div className=' ui container' style={{ marginTop: '50px' }}>
+      <div>
+        <Header />
+
         {this.redenrContent()}
       </div>
     );
