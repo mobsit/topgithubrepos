@@ -5,11 +5,13 @@ const RepoItem = ({ repo }) => {
   return (
     <div className='item'>
       <div className='image'>
-        <img src={repo.owner.avatar_url} />
+        <img src={repo.owner.avatar_url} alt='avatar' />
       </div>
 
       <div className='content'>
-        <a className='header'>{repo.name}</a>
+        <a href={repo.html_url} className='header'>
+          {repo.name}
+        </a>
         <div className='meta'>
           <span className='cinema'>{repo.description}</span>
         </div>
